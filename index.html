@@ -26,7 +26,7 @@
 <body>
     <!-- header min-height -->
     <header class="w-100 py-2">
-        <nav class="d-flex w-100 justify-content-beetween bg-white py-1">
+        <nav class="d-flex w-100 justify-content-beetween bg-white py-1 align-items-center">
             <div class="px-2 d-flex align-items-center">
                 <img src="img/mobile-logo.png" alt="Mobile-Logo" class="img-fluid d-md-inline-block d-lg-none">
                 <img src="img/logo.svg" alt="Logo" class="img-fluid d-none d-lg-inline-block">
@@ -35,20 +35,26 @@
                 <label for="search-bar"><i class="fa-sharp fa-regular fa-magnifying-glass"></i></label>
                 <input type="text" id="search-bar" placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
-            <ul class="list-unstyled px-2 d-flex justify-content-end h-100">
+            <ul class="px-2 d-flex justify-content-end">
                 <li class="px-2 d-none d-lg-flex"><i class="fa-solid fa-list"></i></li>
                 <li class="px-2 d-none d-lg-flex"><i class="fa-solid fa-circle-question"></i></li>
                 <li class="px-2 d-none d-lg-flex"><i class="fa-solid fa-ellipsis-vertical"></i></li>
                 <li class="px-2 d-flex">bottone</li>
             </ul>                  
-
         </nav>
     </header>
     <!-- /header min-height -->
     <!-- main flex calc height -->
-    <main>
+    <main class="d-flex">
         <!-- left side nav bar -->
-        <nav></nav>
+        <nav class="h-100 d-flex flex-column p-4 justify-content-between">
+            <div class="d-flex flex-column">
+                <a href="#" class="py-2 align-baseline"><i class="fa-solid fa-house"></i><span class="d-none d-lg-inline-block ms-2">Home</span></a>
+                <a href="#" class="py-2 align-baseline"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-inline-block ms-2">Stats</span></a>
+                <a href="#" class="py-2 align-baseline"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline-block ms-2">Signal</span></a>
+              </div>
+              <a href="#" class="py-2 align-baseline"><i class="fa-solid fa-gear"></i><span class="d-none d-lg-inline-block ms-2">Admin</span></a>
+        </nav>
         <!-- /left side nav bar -->
         <!-- contet section on right -->
         <section></section>

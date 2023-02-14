@@ -5,8 +5,13 @@ COMMON
 __________________*/
 
 body {
-    min-height: 100vh;
-    min-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* ______________
@@ -30,10 +35,17 @@ MAIN
 
 __________________*/
 
+main {
+    height: calc(100% - var(--ms-h-header));
+}
 
 /* ______________
 
-ASIDE
+ASIDE  NAV
 
 __________________*/
 
+main nav {
+    background-color: var(--ms-tertiary);
+    color: var(--ms-primary);
+}
