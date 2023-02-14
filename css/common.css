@@ -16,11 +16,21 @@ COLOR
 
 __________________*/
 
+:root {
+    --ms-primary:  #f8f9fa ;
+    --ms-secondary: #1b72e8;
+    --ms-tertiary: #1b72e8;
+}
+
 /* ______________
 
 VARIABLES
 
 __________________*/
+
+:root {
+    --ms-h-header: 4.375rem;
+}
 
 /* ______________
 

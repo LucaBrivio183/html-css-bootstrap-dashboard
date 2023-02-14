@@ -4,7 +4,10 @@ COMMON
 
 __________________*/
 
-
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
 
 /* ______________
 
@@ -12,7 +15,14 @@ HEADER
 
 __________________*/
 
+header  {
+    min-height: var(--ms-h-header,4.375rem);
+    background-color: var(--ms-primary);
+}
 
+header nav {
+    height: 50px;
+}
 
 /* ______________
 
