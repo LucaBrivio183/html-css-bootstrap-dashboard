@@ -16,12 +16,12 @@ HEADER
 __________________*/
 
 header  {
-    min-height: var(--ms-h-header,4.375rem);
+    height: var(--ms-h-header,4.375rem);
     background-color: var(--ms-primary);
 }
 
-header nav {
-    height: 50px;
+header nav img:first-child {
+    max-width: 3.125rem;
 }
 
 /* ______________
