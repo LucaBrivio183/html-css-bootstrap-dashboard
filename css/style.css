@@ -61,6 +61,5 @@ main section:first-child {
 }
 
 main section:first-child span {
-    margin:0.25rem;
-    
+    margin:0.25rem;   
 }
