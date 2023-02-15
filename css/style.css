@@ -10,10 +10,7 @@ body {
     background-color: var(--ms-primary);
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+
 
 /* ______________
 
@@ -27,6 +24,12 @@ header  {
 
 header nav {
     height: var(--ms-h-nav);
+}
+
+header nav a {
+    
+    text-decoration: none;
+    color: inherit;
 }
 
 /* ______________
@@ -45,6 +48,11 @@ main aside i {
     width: 1.875rem;
 }
 
+main aside a {
+
+    text-decoration: none;
+    color: inherit;
+}
 /* ______________
 
 MAIN
@@ -63,3 +71,4 @@ main section:first-child {
 main section:first-child span {
     margin:0.25rem;   
 }
+
