@@ -57,4 +57,10 @@ main {
 
 main section:first-child {
     background-color: var(--ms-secondary);
+    color: white;
+}
+
+main section:first-child span {
+    margin:0.25rem;
+    
 }

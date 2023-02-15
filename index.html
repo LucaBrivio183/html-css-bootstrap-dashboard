@@ -26,16 +26,16 @@
 <body>
     <!-- header min-height -->
     <header class="py-2">
-        <nav class="bg-white row">
+        <nav class="bg-white row py-2">
             <div class="col-auto px-3 h-100">
                 <img src="img/mobile-logo.png" alt="Mobile-Logo" class="h-100 d-md-inline-block d-lg-none">
                 <img src="img/logo.svg" alt="Logo" class="h-100 d-none d-lg-inline-block">
             </div>
-            <div class="px-3 py-2 col">
-                <label for="search-bar"><i class="fa-sharp fa-regular fa-magnifying-glass"></i></label>
-                <input class="flex-grow-1 bg-transparent border-0" type="text" id="search-bar" placeholder="Prova a cercare: Lezioni di Laravel">
+            <div class="col d-flex align-items-center bg-secondary rounded" style="--bs-bg-opacity: .5;">
+                <label for="search-bar"><i class="fa-solid fa-magnifying-glass pe-2"></i></label>
+                <input class="flex-grow-1 bg-transparent border-0 me-2" type="text" id="search-bar" placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
-            <ul class="list-unstyled px-3 col-auto d-flex d-flex">
+            <ul class="list-unstyled px-3 col-auto d-flex">
                 <li class="px-2 d-none d-lg-flex align-items-center"><i class="fa-solid fa-list"></i></li>
                 <li class="px-2 d-none d-lg-flex align-items-center"><i class="fa-solid fa-circle-question"></i></li>
                 <li class="px-2 d-none d-lg-flex align-items-center"><i class="fa-solid fa-ellipsis-vertical"></i></li>
@@ -57,16 +57,23 @@
         </aside>
         <!-- /left side nav bar -->
         <!-- contet section on right -->
-        <div class="flex-grow-1 container-fluid">
-            <section class="row">
-                <div class="col">
-
+        <div class="flex-grow-1 container-fluid overflow-y-scroll">
+            <section class="row py-4 gy-4">
+                <div class="col-lg-3 order-lg-3">
+                    <span>Nuovo studente</span>
                 </div>
-                <div class="col">
-
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="d-inline-block">Boolean</h2>
+                    <span class="badge rounded-pill text-bg-info text-white">piano Blaze</span><br>
+                    <span class="badge rounded-pill text-bg-info text-white">3 app</span><i class="fa-solid fa-angles-right"></i>
+                    <span class="badge rounded-pill text-bg-info text-white d-lg-none">+</span>
+                    <span class="badge rounded-pill text-bg-info text-white d-none d-lg-inline-block">Boolean mobile app</span>
+                    <span class="badge rounded-pill text-bg-info text-white d-none d-lg-inline-block">Boolean blog app</span>
+                    <span class="badge rounded-pill text-bg-info text-white d-none d-lg-inline-block">Boolean web app</span>
                 </div>
-                <div class="col">
-
+                <div class="col-lg-3 order-lg-2">
+                    <span>Studenti online negli ultimi 30 minuti</span><br>
+                    <h3>125</h3>
                 </div>
             </section>
             <section class="py-3 row">
