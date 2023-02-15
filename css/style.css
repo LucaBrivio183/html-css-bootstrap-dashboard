@@ -26,10 +26,19 @@ header nav {
     height: var(--ms-h-nav);
 }
 
-header nav a {
-    
+header nav a {   
     text-decoration: none;
     color: inherit;
+}
+
+header nav li:hover {
+    cursor: pointer;
+    font-size: 150%;
+}
+
+header nav input:focus {
+    border: 0;
+    outline: none;
 }
 
 /* ______________
@@ -48,10 +57,12 @@ main aside i {
     width: 1.875rem;
 }
 
-main aside a {
-    text-decoration: none;
-    color: inherit;
+main aside li:hover {
+    cursor: pointer;
+    background-color: rgba(240, 240, 240, 0.5);
 }
+
+
 /* ______________
 
 MAIN
