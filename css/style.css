@@ -50,7 +50,7 @@ __________________*/
 main aside {
     background-color: var(--ms-tertiary);
     color: var(--ms-primary);
-    font-size: 1;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 main aside i {
