@@ -24,16 +24,16 @@
 <body>
     <!-- header min-height -->
     <header class="py-2">
-        <nav class="bg-white row py-2">
-            <div class="col-auto px-3 h-100">
+        <nav class="bg-white d-flex justify-content-between py-2">
+            <div class="px-3 h-100">
                 <img src="img/mobile-logo.png" alt="Mobile-Logo" class="h-100 d-md-inline-block d-lg-none">
                 <img src="img/logo.svg" alt="Logo" class="h-100 d-none d-lg-inline-block">
             </div>
-            <div class="col d-flex align-items-center bg-secondary rounded" style="--bs-bg-opacity: .4;">
-                <label for="search-bar"><i class="fa-solid fa-magnifying-glass pe-2"></i></label>
+            <div class="flex-grow-1 d-flex align-items-center bg-secondary rounded" style="--bs-bg-opacity: .4;">
+                <label for="search-bar"><i class="fa-solid fa-magnifying-glass px-2"></i></label>
                 <input class="flex-grow-1 bg-transparent border-0 me-2" type="text" id="search-bar" placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
-            <ul class="list-unstyled px-3 col-auto d-flex">
+            <ul class="list-unstyled px-3 d-flex justify-content-end">
                 <li class="px-2 d-none d-lg-flex align-items-center"><i class="fa-solid fa-list fa-large"></i></li>
                 <li class="px-2 d-none d-lg-flex align-items-center"><i class="fa-solid fa-circle-question fa-large"></i></li>
                 <li class="px-2 d-none d-lg-flex align-items-center"><i class="fa-solid fa-ellipsis-vertical fa-large"></i></li>
@@ -67,6 +67,7 @@
         <!-- /left side nav bar -->
         <!-- contet section on right -->
         <div class="flex-grow-1 container-fluid overflow-y-scroll">
+            <!-- header-like section of main dashboard -->
             <section class="row py-4 gy-4">
                 <div class="col-lg-3 order-lg-3">
                     <span>Nuovo studente</span>
@@ -86,9 +87,13 @@
                     <h3>125</h3>
                 </div>
             </section>
+            <!-- /header-like section of main dashboard -->
+            <!-- main dashboard -->
             <section class="py-3 row">
-                    <div class="col-lg-8">
-                        <div class="card mb-3">
+                    <!-- column for first 2 card togheter -->
+                    <div class="col-lg-8"> 
+                        <!-- next classes card -->
+                        <div class="card mb-3"> 
                             <div class="card-header"><h2>Prossime classi</h2></div>
                             <div class="card-body p-2">
                                 <table class="table table-hover">
@@ -186,6 +191,8 @@
                                   </table>
                             </div>                          
                         </div>
+                        <!-- /next classes card -->
+                        <!-- faq card -->
                         <div class="card mb-3">
                             <div class="card-header"><h2>F.A.Q.</h2></div>
                             <div class="card-body p-2">
@@ -197,7 +204,7 @@
                                         </button>
                                       </h2>
                                       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                        <div class="accordion-body">Clicca sul + in atto nella sezione blu.</div>
                                       </div>
                                     </div>
                                     <div class="accordion-item">
@@ -207,7 +214,7 @@
                                         </button>
                                       </h2>
                                       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                        <div class="accordion-body">Clicca sulficona dena camanella.</div>
                                       </div>
                                     </div>
                                     <div class="accordion-item">
@@ -217,14 +224,18 @@
                                         </button>
                                       </h2>
                                       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                        <div class="accordion-body">Non proprio.</div>
                                       </div>
                                     </div>
                                   </div>
                             </div>                          
                         </div>
+                        <!-- /faq card -->
                     </div>    
+                    <!-- /column for first 2 card togheter -->
+                    <!-- column for other 2 card togheter -->
                     <div class="col-lg-4">
+                        <!-- to do card -->
                         <div class="card mb-3">
                             <div class="card-header"><h2>Todo</h2></div>
                             <div class="card-body p-2">
@@ -250,6 +261,8 @@
                                   </ul>
                             </div>                          
                         </div>
+                        <!-- /to do card -->
+                        <!-- stats card -->
                         <div class="card mb-3">
                             <div class="card-body p-2">
                                 <div class="card">
@@ -267,8 +280,11 @@
                                   </div>  
                             </div>                          
                         </div>
+                        <!-- /stats card -->
                     </div>
+                    <!-- /column for other 2 card togheter -->
             </section>
+            <!-- main dashboard -->
         </div>
         <!-- /contet section on right -->
     </main>
@@ -347,6 +363,7 @@
                 <div class="col-12"> <!-- Buttons -->
                     <button type="submit" class="btn btn-primary">Salva</button>
                     <button type="reset" class="btn btn-warning">Svuota</button>
+                </div>
             </form>
         </div>
     </div>
