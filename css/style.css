@@ -75,7 +75,16 @@ main section:first-child span {
 main .card .table img {
     width: 1.875rem;
     height: 1.875rem;
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
     border-radius: 100%;
 }
 
+.offcanvas.offcanvas-end {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .offcanvas.offcanvas-end {
+        width: 60%;
+    }
+}
