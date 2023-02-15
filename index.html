@@ -25,21 +25,21 @@
 </head>
 <body>
     <!-- header min-height -->
-    <header class="w-100 py-2">
-        <nav class="d-flex w-100 justify-content-beetween bg-white py-1 align-items-center">
-            <div class="px-2 d-flex align-items-center">
-                <img src="img/mobile-logo.png" alt="Mobile-Logo" class="img-fluid d-md-inline-block d-lg-none">
-                <img src="img/logo.svg" alt="Logo" class="img-fluid d-none d-lg-inline-block">
+    <header class="py-2">
+        <nav class="bg-white row">
+            <div class="col-auto px-3 h-100">
+                <img src="img/mobile-logo.png" alt="Mobile-Logo" class="h-100 d-md-inline-block d-lg-none">
+                <img src="img/logo.svg" alt="Logo" class="h-100 d-none d-lg-inline-block">
             </div>
-            <div class="px-2 flex-grow-1 bg-secondary rounded-2">
+            <div class="px-3 py-2 col">
                 <label for="search-bar"><i class="fa-sharp fa-regular fa-magnifying-glass"></i></label>
-                <input type="text" id="search-bar" placeholder="Prova a cercare: Lezioni di Laravel">
+                <input class="flex-grow-1 bg-transparent border-0" type="text" id="search-bar" placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
-            <ul class="px-2 d-flex justify-content-end">
-                <li class="px-2 d-none d-lg-flex"><i class="fa-solid fa-list"></i></li>
-                <li class="px-2 d-none d-lg-flex"><i class="fa-solid fa-circle-question"></i></li>
-                <li class="px-2 d-none d-lg-flex"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                <li class="px-2 d-flex">bottone</li>
+            <ul class="list-unstyled px-3 col-auto d-flex d-flex">
+                <li class="px-2 d-none d-lg-flex align-items-center"><i class="fa-solid fa-list"></i></li>
+                <li class="px-2 d-none d-lg-flex align-items-center"><i class="fa-solid fa-circle-question"></i></li>
+                <li class="px-2 d-none d-lg-flex align-items-center"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                <li class="px-2 d-flex align-items-center">bottone</li>
             </ul>                  
         </nav>
     </header>
@@ -47,23 +47,30 @@
     <!-- main flex calc height -->
     <main class="d-flex">
         <!-- left side nav bar -->
-        <aside class="h-100 d-flex flex-column p-4 justify-content-between">
+        <aside class="d-flex flex-column p-4 justify-content-between flex-shrink-0">
             <div class="d-flex flex-column">
-                <a href="#" class="mb-2"><i class="fa-solid fa-house"></i><span class="d-none d-lg-inline-block">Home</span></a>
-                <a href="#" class="mb-2"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-inline-block">Stats</span></a>
-                <a href="#" class="mb-2"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline-block">Signal</span></a>
+                <a href="#" class="mb-2"><i class="fa-solid fa-house fa-large"></i><span class="d-none d-lg-inline-block ps-2">Home</span></a>
+                <a href="#" class="mb-2"><i class="fa-solid fa-chart-simple fa-large"></i><span class="d-none d-lg-inline-block ps-2">Stats</span></a>
+                <a href="#" class="mb-2"><i class="fa-solid fa-signal fa-large"></i><span class="d-none d-lg-inline-block ps-2">Signal</span></a>
               </div>
-              <a href="#" class="mb-2"><i class="fa-solid fa-gear"></i><span class="d-none d-lg-inline-block">Admin</span></a>
+              <a href="#" class="mb-2"><i class="fa-solid fa-gear fa-large"></i><span class="d-none d-lg-inline-block ps-2">Admin</span></a>
         </aside>
         <!-- /left side nav bar -->
         <!-- contet section on right -->
-        <div class="flex-grow-1">
-            <section class="">
+        <div class="flex-grow-1 container-fluid">
+            <section class="row">
+                <div class="col">
 
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
             </section>
-            <section class="container-fluid py-3">
-                <div class="w-100 d-flex flex-wrap ">
-                    <div class="w-100">
+            <section class="py-3 row">
+                    <div class="col-lg-8">
                         <div class="card mb-3">
                             <div class="card-header"><h2>Prossime classi</h2></div>
                             <div class="card-body">
@@ -77,7 +84,7 @@
                             </div>                          
                         </div>
                     </div>    
-                    <div class="w-100">
+                    <div class="col-lg-4">
                         <div class="card mb-3">
                             <div class="card-header"><h2>Prossime classi</h2></div>
                             <div class="card-body">
@@ -91,7 +98,6 @@
                             </div>                          
                         </div>
                     </div>
-                </div>
             </section>
         </div>
         <!-- /contet section on right -->

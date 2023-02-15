@@ -10,6 +10,10 @@ __________________*/
     box-sizing: border-box;
 }
 
+.list-unstyled {
+    margin: 0;
+}
+
 /* ______________
 
 COLOR
@@ -29,7 +33,7 @@ VARIABLES
 __________________*/
 
 :root {
-    --ms-h-header: 4.375rem;
+    --ms-h-nav: 3.125rem;
 }
 
 /* ______________

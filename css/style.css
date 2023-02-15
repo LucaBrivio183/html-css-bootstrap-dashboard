@@ -22,12 +22,11 @@ HEADER
 __________________*/
 
 header  {
-    height: var(--ms-h-header,4.375rem);
     background-color: var(--ms-primary);
 }
 
-header nav img:first-child {
-    max-width: 3.125rem;
+header nav {
+    height: var(--ms-h-nav);
 }
 
 /* ______________
@@ -39,7 +38,11 @@ __________________*/
 main aside {
     background-color: var(--ms-tertiary);
     color: var(--ms-primary);
-    font-size: .875rem;
+    font-size: 1.25rem;
+}
+
+main aside i {
+    width: 1.875rem;
 }
 
 /* ______________
@@ -49,7 +52,7 @@ MAIN
 __________________*/
 
 main {
-    height: calc(100% - var(--ms-h-header));
+    height: calc(100% - var(--ms-h-nav) - 1rem );
 }
 
 main section:first-child {
